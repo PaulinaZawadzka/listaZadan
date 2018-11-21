@@ -1,0 +1,173 @@
+/* Background pattern from Toptal Subtle Patterns */
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-image: url(img/background.png);
+    width: 100vw;
+    padding: 0 10%;
+}
+
+form {
+    text-align: left;
+    margin: 100px auto 20px auto;
+}
+
+.input-task {
+    height: 40px;
+    width: 50%;
+    padding: 5px 30px;
+    border: 2px solid black;
+    border-radius: 5px;
+    outline: none;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+
+.btn {
+    margin-top: 10px;
+    height: 40px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(41, 156, 233);
+    width: 200px;
+    text-align: center;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: rgb(61, 176, 253);
+}
+
+.btn-showList {
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}
+
+.grid-container {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto;
+    margin-top: 50px;
+
+}
+
+.box-list {
+    margin: 20px 0;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 400px;
+    overflow: auto;
+}
+
+.title {
+
+    color: rgb(216, 23, 23);
+    padding: 0 30px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+.title-done-list {
+    color: rgb(5, 150, 5);
+}
+
+.list {
+    margin: 10px;
+    color: black;
+    text-align: left;
+    padding: 0;
+}
+
+.task {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: 2fr 1fr 1fr;
+    text-align: center;
+}
+
+.task span {
+
+    margin: 10px;
+
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.taskdone span {
+    display: inline-block;
+    color: rgb(216, 23, 23);
+    text-align: right;
+}
+
+.task button {
+
+    margin: 10px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn-remove {
+    background-color: rgb(216, 23, 23);
+}
+
+.btn-remove:hover {
+    background-color: rgb(236, 43, 43);
+}
+
+
+.btn-done {
+    background-color: rgb(5, 150, 5);
+}
+
+.btn-done:hover {
+    background-color: rgb(25, 170, 25);
+}
+
+.taskdone {
+    display: inline-block;
+    margin: 15px 10px;
+    width: 40%;
+}
+
+.bravo {
+    text-align: right;
+    color: rgb(236, 43, 43);
+}
+
+@media (max-width: 780px) {
+
+    .input-task,
+    .btn {
+        width: 100%;
+    }
+
+    .grid-container {
+
+        grid-column-gap: 0px;
+        grid-template-columns: auto;
+
+    }
+
+    .box-list {
+
+        height: auto;
+        overflow: none;
+    }
+
+
+}

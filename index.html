@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="">
+        <input class="input-task" type="text" placeholder="wpisz nazwę zadania">
+        <button class="btn btn-add">Dodaj</button>
+    </form>
+    <div class="btn-box">
+        <button class=" btn btn-search">Wyszukaj</button>
+        <button class=" btn btn-showList">pokaż całą listę</button>
+    </div>
+
+    <div class="grid-container">
+        <div class="box-list">
+            <h1 class="title title-todo-list">Liczba zadań do wykonania: <span>0</span> </h1>
+            <ul class="list todo-list"></ul>
+        </div>
+        <div class="box-list">
+            <h1 class="title title-done-list">Liczba wykonanych zadań: <span>0</span> </h1>
+            <ul class="list done-list"></ul>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
